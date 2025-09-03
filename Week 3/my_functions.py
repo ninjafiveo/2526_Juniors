@@ -21,8 +21,8 @@ num_2 = float(input("Please enter another number:"))
 
 do_addition(num_1, num_2)
 
-your_name = input("Welcome traveler, what is your name? ")
-your_age = int(input(f"Hi {your_name}. What is your age? "))
+# your_name = input("Welcome traveler, what is your name? ")
+# your_age = int(input(f"Hi {your_name}. What is your age? "))
 
 def npc_response():
     if your_age < 50:
@@ -32,5 +32,22 @@ def npc_response():
     else:
         print("Something went wrong. Cannot compute. Level 5 error. Rebooting.")
 
-npc_response()
+# npc_response()
+
+food = input("What would you like for dinner? ")
+
+'''
+= this is an assignment operator. A command to make a variable a specific value.
+== is a question. is the variable equal to the value it's being asked. 
+'''
+def dinner():
+    if food == "pizza":
+        print("What would you like on your pizza? ")
+    elif food == "chinese":
+        print("Do you want General Tso's or Hunan Chicken?")
+    else:
+        print("You chose wrong. ")
+
+dinner()
+
 
