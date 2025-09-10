@@ -1,0 +1,6 @@
+age = input("how old are you?")
+print(f"{age}, {type(age)}")
+age = int(age)
+print(f"{age}, {type(age)}")
+age = float(age)
+print(f"{age}, {type(age)}")
