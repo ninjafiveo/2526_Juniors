@@ -8,5 +8,5 @@ for george in sw_chars:
     print(george)
 
 for index, item in enumerate(sw_chars):
-    print(f"{item} is character number {index}")
+    print(f"\n{item} is character number {index}")
 
