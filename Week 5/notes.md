@@ -6,4 +6,4 @@ This is where my notes go.
 - Make your brain hurt and learn big things.
 
 ## Rule Number 1
-**Always be coding**
+**<a href="www.sekol.ninja">Always be coding</a>**
