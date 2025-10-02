@@ -1,26 +1,28 @@
 import pyautogui as pg
 import time, sys
 
-pg.FAILSAFE = True # Fling mouse to top left to abort.
-print("Move the mouse to top left, or press Ctrl+C to abort")
+# pg.FAILSAFE = True # Fling mouse to top left to abort.
+# print("Move the mouse to top left, or press Ctrl+C to abort")
 
-def pointer_location():
-    try:
-        while True:
-            x, y = pg.position()
-            sys.stdout.write(f"\r(x, y) = ({x:4d}, {y:4d})")
-            sys.stdout.flush()
-            time.sleep(0.05) # ~ 20 updates per second
+# pg.moveTo(1000,1000)
 
-    except KeyboardInterrupt:
-        print("\nDone")
+# def pointer_location():
+#     try:
+#         while True:
+#             x, y = pg.position()
+#             sys.stdout.write(f"\r(x, y) = ({x:4d}, {y:4d})")
+#             sys.stdout.flush()
+#             time.sleep(0.05) # ~ 20 updates per second
+
+#     except KeyboardInterrupt:
+#         print("\nDone")
 
 # move mouse to 1288, 460
 # Auto Clicker
-# pg.moveTo(1288, 460)
-# while True:
-#     pg.click()
-#     time.sleep(.005)
+pg.moveTo(1288, 460)
+while True:
+    pg.click()
+    time.sleep(.005)
 
 
 
@@ -46,5 +48,5 @@ def send_email():
     time.sleep(1)
     pg.click()
 
-# pointer_location()
-send_email()
+pointer_location()
+# send_email()
